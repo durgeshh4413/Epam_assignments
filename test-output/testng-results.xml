@@ -1,52 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-28T16:25:34 IST" name="Default suite" finished-at="2023-03-28T16:25:43 IST" duration-ms="9143">
+  <suite started-at="2023-04-03T22:37:12 IST" name="Default suite" finished-at="2023-04-03T22:37:12 IST" duration-ms="135">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunnerFiles.TestRunner@73e9cf30]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-03-28T16:25:34 IST" name="Default test" finished-at="2023-03-28T16:25:43 IST" duration-ms="9143">
-      <class name="HomeTask_RestFunctional.HomeTaskRestFunctionalTest1">
-        <test-method signature="SendGetRequestToFetchResource()[pri:0, instance:HomeTask_RestFunctional.HomeTaskRestFunctionalTest1@71def8f8]" started-at="2023-03-28T16:25:34 IST" name="SendGetRequestToFetchResource" finished-at="2023-03-28T16:25:40 IST" duration-ms="5570" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SendGetRequestToFetchResource -->
-        <test-method signature="createResource()[pri:0, instance:HomeTask_RestFunctional.HomeTaskRestFunctionalTest1@71def8f8]" started-at="2023-03-28T16:25:40 IST" name="createResource" finished-at="2023-03-28T16:25:41 IST" duration-ms="1018" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createResource -->
-        <test-method signature="getResource()[pri:1, instance:HomeTask_RestFunctional.HomeTaskRestFunctionalTest1@71def8f8]" started-at="2023-03-28T16:25:41 IST" name="getResource" finished-at="2023-03-28T16:25:42 IST" duration-ms="610" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResource -->
-        <test-method signature="updateResource()[pri:2, instance:HomeTask_RestFunctional.HomeTaskRestFunctionalTest1@71def8f8]" started-at="2023-03-28T16:25:42 IST" name="updateResource" finished-at="2023-03-28T16:25:42 IST" duration-ms="714" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateResource -->
-        <test-method signature="deleteResource()[pri:3, instance:HomeTask_RestFunctional.HomeTaskRestFunctionalTest1@71def8f8]" started-at="2023-03-28T16:25:42 IST" name="deleteResource" finished-at="2023-03-28T16:25:43 IST" duration-ms="1186" status="FAIL">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2023-04-03T22:37:12 IST" name="Default test" finished-at="2023-04-03T22:37:12 IST" duration-ms="135">
+      <class name="TestRunnerFiles.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunnerFiles.TestRunner@73e9cf30]" started-at="2023-04-03T22:37:12 IST" name="setUpClass" finished-at="2023-04-03T22:37:12 IST" duration-ms="90" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@57ad2aa7]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[The following asserts failed:
-Response code is not matching expected [404] but found [200]]]>
+              <![CDATA[path must exist: C:\Users\Durgesh_Honrao\Desktop\Assignments\Epam\epam_onboarding_625745\epam_onboarding_625745\src\test\java\feature]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Response code is not matching expected [404] but found [200]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at HomeTask_RestFunctional.HomeTaskRestFunctionalTest1.deleteResource(HomeTaskRestFunctionalTest1.java:99)
+              <![CDATA[java.lang.IllegalArgumentException: path must exist: C:\Users\Durgesh_Honrao\Desktop\Assignments\Epam\epam_onboarding_625745\epam_onboarding_625745\src\test\java\feature
+at io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:49)
+at io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:31)
+at io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
+at io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
+at io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+at io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:122)
+at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
@@ -65,11 +60,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteResource -->
-      </class> <!-- HomeTask_RestFunctional.HomeTaskRestFunctionalTest1 -->
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunnerFiles.TestRunner@73e9cf30]" started-at="2023-04-03T22:37:12 IST" name="tearDownClass" finished-at="2023-04-03T22:37:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunnerFiles.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
