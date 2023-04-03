@@ -162,3 +162,38 @@
   "id": 4
 }
 2023-03-28 16:25:43,393 INFO  [main] HomeTask_RestFunctional.HomeTaskRestFunctionalTest1.deleteResource(HomeTaskRestFunctionalTest1.java:94) {}
+2023-03-30 00:07:44,922 INFO  [main] HomeTask_RestFunctional.HomeTaskRestFunctionalTest1.SendGetRequestToFetchResource(HomeTaskRestFunctionalTest1.java:45) Resource is : /posts Count of resources :100
+2023-03-30 00:07:45,478 INFO  [main] HomeTask_RestFunctional.HomeTaskRestFunctionalTest1.SendGetRequestToFetchResource(HomeTaskRestFunctionalTest1.java:45) Resource is : /comments Count of resources :500
+2023-03-30 00:07:45,927 INFO  [main] HomeTask_RestFunctional.HomeTaskRestFunctionalTest1.SendGetRequestToFetchResource(HomeTaskRestFunctionalTest1.java:45) Resource is : /albums Count of resources :100
+2023-03-30 00:07:46,922 INFO  [main] HomeTask_RestFunctional.HomeTaskRestFunctionalTest1.SendGetRequestToFetchResource(HomeTaskRestFunctionalTest1.java:45) Resource is : /photos Count of resources :5000
+2023-03-30 00:07:47,332 INFO  [main] HomeTask_RestFunctional.HomeTaskRestFunctionalTest1.SendGetRequestToFetchResource(HomeTaskRestFunctionalTest1.java:45) Resource is : /todos Count of resources :200
+2023-03-30 00:07:47,737 INFO  [main] HomeTask_RestFunctional.HomeTaskRestFunctionalTest1.SendGetRequestToFetchResource(HomeTaskRestFunctionalTest1.java:45) Resource is : /users Count of resources :10
+2023-03-30 00:07:47,894 INFO  [main] HomeTask_RestFunctional.HomeTaskRestFunctionalTest1.createResource(HomeTaskRestFunctionalTest1.java:57) {
+  "title" : "foo",
+  "body" : "bar",
+  "userId" : "4"
+}
+2023-03-30 00:07:48,525 INFO  [main] HomeTask_RestFunctional.HomeTaskRestFunctionalTest1.createResource(HomeTaskRestFunctionalTest1.java:59) {
+  "title": "foo",
+  "body": "bar",
+  "userId": "4",
+  "id": 101
+}
+2023-03-30 00:07:49,117 INFO  [main] HomeTask_RestFunctional.HomeTaskRestFunctionalTest1.getResource(HomeTaskRestFunctionalTest1.java:70) {
+  "userId": 1,
+  "id": 4,
+  "title": "eum et est occaecati",
+  "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+}
+2023-03-30 00:07:49,128 INFO  [main] HomeTask_RestFunctional.HomeTaskRestFunctionalTest1.updateResource(HomeTaskRestFunctionalTest1.java:82) {
+  "title" : "foo",
+  "body" : "bar",
+  "userId" : "8"
+}
+2023-03-30 00:07:49,705 INFO  [main] HomeTask_RestFunctional.HomeTaskRestFunctionalTest1.updateResource(HomeTaskRestFunctionalTest1.java:84) {
+  "title": "foo",
+  "body": "bar",
+  "userId": "8",
+  "id": 4
+}
+2023-03-30 00:07:50,306 INFO  [main] HomeTask_RestFunctional.HomeTaskRestFunctionalTest1.deleteResource(HomeTaskRestFunctionalTest1.java:94) {}
