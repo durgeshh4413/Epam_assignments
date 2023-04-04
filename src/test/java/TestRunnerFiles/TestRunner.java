@@ -6,8 +6,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 
-@CucumberOptions(tags = "@test", features = {"epam_onboarding_625745/src/test/java/feature"}, glue = {"StepDefinitions"},
-plugin = {})
+@CucumberOptions(tags = "@test", features = "src/test/java/feature", glue = {"StepDefinitions"},
+plugin = {"html:target/cucumber-report.html", "pretty"})
 
 	public class TestRunner extends AbstractTestNGCucumberTests{
 	

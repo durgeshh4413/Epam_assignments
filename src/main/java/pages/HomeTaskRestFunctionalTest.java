@@ -91,9 +91,6 @@ public class HomeTaskRestFunctionalTest {
 		LoggerDemo.getLogger().info(response.asString());
 		softAssert.assertEquals(response.getStatusCode(), 200,"Response code is not matching");
 		softAssert.assertAll();
-		response=Reusable_Endpoints.getRequest(BASEURI, headerMap,route);
-		softAssert.assertEquals(response.getStatusCode(), 404,"Resorce not deleted successfully");
-		softAssert.assertAll();
 	}
 	
 	public void verifyResourceIsDeleted()  {
