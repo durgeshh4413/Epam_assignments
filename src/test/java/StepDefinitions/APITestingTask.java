@@ -10,7 +10,7 @@ import pages.Pages;
 public class APITestingTask {
 	Pages pages;
 	
-	APITestingTask(){
+	public APITestingTask(){
 		pages=new Pages();
 	}
 	

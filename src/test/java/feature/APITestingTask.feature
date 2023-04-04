@@ -1,7 +1,7 @@
 @test
-Feature: Title of your feature
+Feature: User
 
-  Scenario: Title of your scenario
+  Scenario: Create update and delete resource
     Given Send get request to fetch resource and verify resource count
     And Send post request to create a resource
     When Send get request to fetch resource information
