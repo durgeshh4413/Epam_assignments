@@ -1,63 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-05T00:58:28 IST" name="Default suite" finished-at="2023-04-05T00:58:38 IST" duration-ms="9626">
+  <suite started-at="2023-04-15T22:55:53 IST" name="Calculator" finished-at="2023-04-15T22:55:54 IST" duration-ms="191">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunnerFiles.TestRunner@73e9cf30]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="Calculator">
+        <method signature="CalculatorTest.addTest(double,double)[pri:0, instance:TestScripts.CalculatorTest@4dbb42b7]" name="addTest" class="TestScripts.CalculatorTest"/>
+        <method signature="CalculatorTest.divideTest()[pri:0, instance:TestScripts.CalculatorTest@4dbb42b7]" name="divideTest" class="TestScripts.CalculatorTest"/>
+        <method signature="CalculatorTest.multiplyTest()[pri:0, instance:TestScripts.CalculatorTest@4dbb42b7]" name="multiplyTest" class="TestScripts.CalculatorTest"/>
+        <method signature="CalculatorTest.substractTest()[pri:0, instance:TestScripts.CalculatorTest@4dbb42b7]" name="substractTest" class="TestScripts.CalculatorTest"/>
+        <method signature="CalculatorTest.verifyIsNumberPositive()[pri:0, instance:TestScripts.CalculatorTest@4dbb42b7]" name="verifyIsNumberPositive" class="TestScripts.CalculatorTest"/>
+        <method signature="CalculatorTest.addTest(double,double)[pri:0, instance:TestScripts.CalculatorTest@63376bed]" name="addTest" class="TestScripts.CalculatorTest"/>
+        <method signature="CalculatorTest.divideTest()[pri:0, instance:TestScripts.CalculatorTest@63376bed]" name="divideTest" class="TestScripts.CalculatorTest"/>
+        <method signature="CalculatorTest.multiplyTest()[pri:0, instance:TestScripts.CalculatorTest@63376bed]" name="multiplyTest" class="TestScripts.CalculatorTest"/>
+        <method signature="CalculatorTest.substractTest()[pri:0, instance:TestScripts.CalculatorTest@63376bed]" name="substractTest" class="TestScripts.CalculatorTest"/>
+        <method signature="CalculatorTest.verifyIsNumberPositive()[pri:0, instance:TestScripts.CalculatorTest@63376bed]" name="verifyIsNumberPositive" class="TestScripts.CalculatorTest"/>
+      </group> <!-- Calculator -->
     </groups>
-    <test started-at="2023-04-05T00:58:28 IST" name="Default test" finished-at="2023-04-05T00:58:38 IST" duration-ms="9626">
-      <class name="TestRunnerFiles.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunnerFiles.TestRunner@73e9cf30]" started-at="2023-04-05T00:58:28 IST" name="setUpClass" finished-at="2023-04-05T00:58:29 IST" duration-ms="464" status="PASS">
+    <test started-at="2023-04-15T22:55:53 IST" name="check Addition" finished-at="2023-04-15T22:55:54 IST" duration-ms="92">
+      <class name="TestScripts.CalculatorTest">
+        <test-method signature="addTest(double,double)[pri:0, instance:TestScripts.CalculatorTest@4dbb42b7]" started-at="2023-04-15T22:55:54 IST" name="addTest" data-provider="test_data" finished-at="2023-04-15T22:55:54 IST" duration-ms="13" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@684b26b7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunnerFiles.TestRunner@73e9cf30]" started-at="2023-04-05T00:58:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-05T00:58:38 IST" duration-ms="9080" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Title of your scenario"]]>
+                <![CDATA[5.0]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Title of your feature"]]>
+                <![CDATA[4.0]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Resorce not deleted successfully expected [404] but found [200]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Resorce not deleted successfully expected [404] but found [200]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at pages.HomeTaskRestFunctionalTest.verifyResourceIsDeleted(HomeTaskRestFunctionalTest.java:100)
-at StepDefinitions.APITestingTask.verify_that_resource_has_been_deleted_succesfully(APITestingTask.java:57)
-at ✽.Verify that resource has been deleted succesfully(file:///C:/Users/Durgesh_Honrao/Desktop/Assignments/Epam/epam_onboarding_625745/src/test/java/feature/APITestingTask.feature:11)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunnerFiles.TestRunner@73e9cf30]" started-at="2023-04-05T00:58:38 IST" name="tearDownClass" finished-at="2023-04-05T00:58:38 IST" duration-ms="44" status="PASS">
+        </test-method> <!-- addTest -->
+        <test-method signature="divideTest()[pri:0, instance:TestScripts.CalculatorTest@4dbb42b7]" started-at="2023-04-15T22:55:54 IST" name="divideTest" finished-at="2023-04-15T22:55:54 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- TestRunnerFiles.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- divideTest -->
+        <test-method signature="multiplyTest()[pri:0, instance:TestScripts.CalculatorTest@4dbb42b7]" started-at="2023-04-15T22:55:54 IST" name="multiplyTest" finished-at="2023-04-15T22:55:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiplyTest -->
+        <test-method signature="substractTest()[pri:0, instance:TestScripts.CalculatorTest@4dbb42b7]" started-at="2023-04-15T22:55:54 IST" name="substractTest" finished-at="2023-04-15T22:55:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- substractTest -->
+        <test-method signature="verifyIsNumberPositive()[pri:0, instance:TestScripts.CalculatorTest@4dbb42b7]" started-at="2023-04-15T22:55:54 IST" name="verifyIsNumberPositive" finished-at="2023-04-15T22:55:54 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIsNumberPositive -->
+      </class> <!-- TestScripts.CalculatorTest -->
+    </test> <!-- check Addition -->
+    <test started-at="2023-04-15T22:55:54 IST" name="check Addition1" finished-at="2023-04-15T22:55:54 IST" duration-ms="11">
+      <class name="TestScripts.CalculatorTest">
+        <test-method signature="addTest(double,double)[pri:0, instance:TestScripts.CalculatorTest@63376bed]" started-at="2023-04-15T22:55:54 IST" name="addTest" data-provider="test_data" finished-at="2023-04-15T22:55:54 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTest -->
+        <test-method signature="divideTest()[pri:0, instance:TestScripts.CalculatorTest@63376bed]" started-at="2023-04-15T22:55:54 IST" name="divideTest" finished-at="2023-04-15T22:55:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- divideTest -->
+        <test-method signature="multiplyTest()[pri:0, instance:TestScripts.CalculatorTest@63376bed]" started-at="2023-04-15T22:55:54 IST" name="multiplyTest" finished-at="2023-04-15T22:55:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multiplyTest -->
+        <test-method signature="substractTest()[pri:0, instance:TestScripts.CalculatorTest@63376bed]" started-at="2023-04-15T22:55:54 IST" name="substractTest" finished-at="2023-04-15T22:55:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- substractTest -->
+        <test-method signature="verifyIsNumberPositive()[pri:0, instance:TestScripts.CalculatorTest@63376bed]" started-at="2023-04-15T22:55:54 IST" name="verifyIsNumberPositive" finished-at="2023-04-15T22:55:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIsNumberPositive -->
+      </class> <!-- TestScripts.CalculatorTest -->
+    </test> <!-- check Addition1 -->
+  </suite> <!-- Calculator -->
 </testng-results>

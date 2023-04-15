@@ -4,6 +4,7 @@ public class Pages {
 
 	HomeTaskRestFunctionalTest homeTaskRestFunctionalTest;
 	
+	Calculator calculator;
 	
 	
 	
@@ -15,4 +16,13 @@ public class Pages {
 		
 		return homeTaskRestFunctionalTest;
 	}
+	
+	public Calculator calculator() {
+		if(calculator == null) {
+			calculator= new Calculator();
+		}
+		
+		return calculator;
+	}
+
 }
