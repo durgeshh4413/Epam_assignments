@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Calculator" >
+   <test name="check Addition" parallel = "methods" thread-count = "2" >
+   		<groups>
+   			<run>
+   				<include name = "Calculator"></include>
+   			</run>
+   		</groups>
+       <classes> 
+          <class name="TestScripts.CalculatorTest" />
+       </classes>
+   </test>
+ </suite>
