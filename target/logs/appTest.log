@@ -425,3 +425,26 @@
   "title": "eum et est occaecati",
   "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
 }
+2023-04-16 04:01:35,353 INFO  [main] pages.HomeTaskRestFunctionalTest.SendGetRequestToFetchResource(HomeTaskRestFunctionalTest.java:44) Resource is : /posts Count of resources :100
+2023-04-16 04:01:36,161 INFO  [main] pages.HomeTaskRestFunctionalTest.SendGetRequestToFetchResource(HomeTaskRestFunctionalTest.java:44) Resource is : /comments Count of resources :500
+2023-04-16 04:01:36,817 INFO  [main] pages.HomeTaskRestFunctionalTest.SendGetRequestToFetchResource(HomeTaskRestFunctionalTest.java:44) Resource is : /albums Count of resources :100
+2023-04-16 04:01:38,246 INFO  [main] pages.HomeTaskRestFunctionalTest.SendGetRequestToFetchResource(HomeTaskRestFunctionalTest.java:44) Resource is : /photos Count of resources :5000
+2023-04-16 04:01:38,867 INFO  [main] pages.HomeTaskRestFunctionalTest.SendGetRequestToFetchResource(HomeTaskRestFunctionalTest.java:44) Resource is : /todos Count of resources :200
+2023-04-16 04:01:39,470 INFO  [main] pages.HomeTaskRestFunctionalTest.SendGetRequestToFetchResource(HomeTaskRestFunctionalTest.java:44) Resource is : /users Count of resources :10
+2023-04-16 04:01:39,655 INFO  [main] pages.HomeTaskRestFunctionalTest.createResource(HomeTaskRestFunctionalTest.java:56) {
+  "title" : "foo",
+  "body" : "bar",
+  "userId" : "4"
+}
+2023-04-16 04:01:40,585 INFO  [main] pages.HomeTaskRestFunctionalTest.createResource(HomeTaskRestFunctionalTest.java:58) {
+  "title": "foo",
+  "body": "bar",
+  "userId": "4",
+  "id": 101
+}
+2023-04-16 04:01:41,250 INFO  [main] pages.HomeTaskRestFunctionalTest.getResource(HomeTaskRestFunctionalTest.java:69) {
+  "userId": 1,
+  "id": 4,
+  "title": "eum et est occaecati",
+  "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+}
