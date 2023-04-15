@@ -68,7 +68,7 @@ public class HomeTaskRestFunctionalTest {
 		response=Reusable_Endpoints.getRequest(BASEURI, headerMap,route);
 		LoggerDemo.getLogger().info(response.asString());
 		softAssert.assertEquals(response.getStatusCode(), 200,"Response code is not matching");
-		softAssert.assertEquals(response.jsonPath().get("id"), Integer.parseInt(id));
+		softAssert.assertEquals(Integer.parseInt(response.jsonPath().get("id")), Integer.parseInt(id));
 		softAssert.assertAll();
 	}
 	
