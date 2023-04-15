@@ -19,7 +19,7 @@
 						<id>default-test</id>
 						<configuration>
 							<includes>
-								<include>**/TestRunner.java</include>
+								<include>**/testng.xml</include>
 							</includes>
 						</configuration>
 					</execution>
