@@ -18,9 +18,12 @@
 					<execution>
 						<id>default-test</id>
 						<configuration>
-							<includes>
+							<suiteXmlFiles>
+								<suiteXmlFile>testng1.xml</suiteXmlFile>
+							</suiteXmlFiles>
+							<!--<includes>
 								<include>**/testng.xml</include>
-							</includes>
+							</includes>-->
 						</configuration>
 					</execution>
 				</executions>
